@@ -57,23 +57,91 @@
                             rel="nofollow">Croquetas de Brócoli rellenas con Queso</a>
                     </li>
                 </ol>
-                <h1>Título</h1>
-                <h2>Título</h2>
-                <h3>Título</h3>
-                <h4>Título</h4>
-                <h5>Título</h5>
-                <h6>Títulos</h6>
+                <hr>
+            </article>
+
+            <article>
+                <h3>Galería</h3>
+                <div class="galeria">
+                    <div class="col">
+                        <img src="./img/comida/manzanas.jpg" alt="Hojaldres de manzana y pera">
+                    </div>
+                    <div class="col">
+                        <img src="./img/comida/pie-de-peras.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="./img/comida/piña.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="./img/comida/ensalada-de-apio.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="./img/comida/calabacitas.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="./img/comida/croquetas.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>Videos de recetas</h3>
+                <video controls preload="auto">
+                    <source src="https://truffle-renditions.s3.tastemadecontent.net/b58c23e9-peras-y-manzanas-hojaldradas-l-es/mp4/b58c23e9-peras-y-manzanas-hojaldradas-l-es-432-1100-mp4.mp4">
+                    <source src="./video1.m4v#t=10.60">
+                </video>
+            </article>
+            <article>
+                <h5>Registrate</h5>
+                <form action="">
+                    <label for="name">
+                        <span>¿Cuál es tu nombre?</span>
+                        <input type="text" name="name" id="name" autocomplete="name" required>
+                    </label>
+                    <label for="email">
+                        <span>¿Cuál es tu correo?</span>
+                        <input type="email" name="email" id="email" autocomplete="email" required>
+                    </label>
+                    <label for="country">
+                        <span>¿En qué país vives?</span>
+                        <input type="text" name="country" id="country" autocomplete="country" required>
+                    </label>
+                    <label for="cp">
+                        <span>¿Cuál es tu código postal?</span>
+                        <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+                    </label>
+                    <!-- <select name="recetas" id="">
+                        <option value="Hojaldres de manzana y pera">Hojaldres de manzana y pera</option>
+                        <option value="Tarta de pera">Tarta de pera</option>
+                        <option value="Piña rellena">Piña rellena</option>
+                        <option value="Ensalada de Apio">Ensalada de Apio</option>
+                        <option value="Calabacitas rellenas de queso">Calabacitas rellenas de queso</option>
+                        <option value="Croquetas de Brócoli rellenas con Queso">Croquetas de Brócoli rellenas con Queso</option>
+                    </select> -->
+                    <input list="recetas">
+                    <datalist id="recetas">
+                        <option value="Hojaldres de manzana y pera"></option>
+                        <option value="Tarta de pera"></option>
+                        <option value="Piña rellena"></option>
+                        <option value="Ensalada de Apio"></option>
+                        <option value="Calabacitas rellenas de queso"></option>
+                        <option value="Croquetas de Brócoli rellenas con Queso"></option>
+                    </datalist>
+                    <input type="submit" value="Enviar">
+                </form>
             </article>
         </section>
     </main>
     <aside id="bd-aside">
-        <h5>Lista de contenido</h5>
-        <ul>
-            <li>Frutas</li>
-            <li>Verduras</li>
-            <li>Galería</li>
-            <li>Video</li>
-        </ul>
+        <section>
+            <form action="">
+                <label for="calendario">
+                    <span>Calendario</span>
+                    <input type="datetime-local" name="calendario" id="calendario">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
     </aside>
     <footer id="bd-footer"> <small>to the mars 🚀 whith Love</small></footer>
 </body>

@@ -54,10 +54,28 @@ header, main, aside{
 }
 #bd-main{
     border-color:rgb(226, 173, 27);
+    width: 70%;
 }
 #bd-footer{
     border-color:rgb(50, 51, 83);
 }
 #bd-aside{ 
     border-color:rgb(127, 37, 179);
+    float:right;
+    width:20%;
+}
+main, aside{
+    display:inline-flex;
+}
+/**customs*/
+hr{
+    min-width: 100%;
+}
+div .col{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+.galeria div img{
+    width: 25%;
 }
