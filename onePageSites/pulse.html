@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Pulse</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *,body,div,p{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        :root{
+            font-size: 62.5%;
+            /* colores */
+            --grassGreen:#00ad6a;
+            --pulseGreen:#1fe374;
+            --mintGreen:#eafaf1;
+            --lightGray:#d6dae5;
+            --coldBlack:#080c16;
+            --warmWhite:#fcfcfc;
+            /* font */
+            --workFont:'Work Sans', sans-serif;
+        }
+        body,p{
+            font-size: 1.6rem;
+            font-family: var(--workFont);
+        }
+        h1,h2,h3,h4,h5{
+            font-family: var(--workFont);
+            font-weight: 700;
+        }
+        /* navegation */
+        .mobileNav__nav{
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--lightGray);
+        }
+        header nav{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+           align-items: center;
+        }
+        nav span.screen-reader{
+            display: none;
+        }
+        button.nav_burger{
+            background-color:transparent;
+            border: none;
+            margin-top: 5px;
+        }
+        button svg {
+            width: 32px;
+            height: 23px;
+            color:var(--pulseGreen);
+            fill:var(--pulseGreen);
+        }
+        ul.mobileNav__list{
+            display:none
+        }
+        /* main content */
+        main{
+            background-color: var(--mintGreen);
+            display:flex;
+        }
+        .pricingInfo__try{
+            margin: 32px 24px;
+        }
+        .pricingInfo__try h1{
+            font-weight: 700;
+            font-size: 4.8rem;
+            margin-bottom: 4rem;
+            margin-top: 4rem;
+        }
+        .pricingInfo__try p {
+            line-height: 2.7rem;
+        }
+    </style>    
+</head>
+<body>
+    <header class="mobileNav">
+        <div class="mobileNav__nav">
+            <nav>
+                <a href="#">
+                    <img src="https://pulseapp.com/img/pulse-logo.svg" alt="Pulse logo" aria-hidden="true">
+                    <span class="screen-reader">Pulse App</span>
+                </a>
+                <div>
+                    <button class="nav_burger">
+                        <svg>
+                            <title>Menú</title>
+                            <path d="M0 0h35v2H0zM0 10h35v2H0zM0 20h35v2H0z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <ul class="mobileNav__list" role="list">
+                <li>Features</li>
+                <li>Customer Stories</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+                <li>Contact</li>
+                <li>Support</li>                
+                <li>Sign Up</li>                
+            </ul>
+        </div>
+    </header>
+    <main role="main">
+        <div id="pricingInfo">
+            <div class="pricingInfo__try">
+                <h1 role="heading">Try Pulse free for 30 days.</h1>
+                <p>See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.</p>
+            </div>
+            <div class="pricingInfo_cards"></div>
+            <div id="review"></div>
+        </div>
+    </main>
+</body>
+</html>
