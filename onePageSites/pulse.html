@@ -22,10 +22,17 @@
             --pulseGreen:#1fe374;
             --mintGreen:#eafaf1;
             --lightGray:#d6dae5;
+            --Pulsegray:#464951;
             --coldBlack:#080c16;
             --warmWhite:#fcfcfc;
             /* font */
             --workFont:'Work Sans', sans-serif;
+            /* sizes */
+            --text-body:1.6rem;
+            --text-xl:2.0rem;
+        }
+        html{
+            background-color: var(--warmWhite);
         }
         body,p{
             font-size: 1.6rem;
@@ -34,6 +41,13 @@
         h1,h2,h3,h4,h5{
             font-family: var(--workFont);
             font-weight: 700;
+        }
+        h2, h4{
+            font-size: var(--text-xl);
+            margin-bottom: 1.6rem;
+        }
+        h2{
+            color: var(--grassGreen);
         }
         /* navegation */
         .mobileNav__nav{
@@ -56,9 +70,9 @@
         }
         button svg {
             width: 32px;
-            height: 23px;
-            color:var(--pulseGreen);
-            fill:var(--pulseGreen);
+            height: 32px;
+            color:var(--grassGreen);
+            fill:var(--grassGreen);
         }
         ul.mobileNav__list{
             display:none
@@ -71,15 +85,32 @@
         .pricingInfo__try{
             margin: 32px 24px;
         }
-        .pricingInfo__try h1{
-            font-weight: 700;
-            font-size: 4.8rem;
-            margin-bottom: 4rem;
-            margin-top: 4rem;
+            .pricingInfo__try h1{
+                font-weight: 700;
+                font-size: 4.8rem;
+                margin-bottom: 4rem;
+                margin-top: 4rem;
+            }
+            .pricingInfo__try p {
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+            }
+        /* Pricing gruop */
+        .princingInfo__group--content{
+            margin: 0 24px;
+            color:var(--Pulsegray);
         }
-        .pricingInfo__try p {
-            line-height: 2.7rem;
-        }
+            .princingInfo__group--content ul{
+                margin-left: 3.2rem;
+                margin-bottom: 1.6rem;
+                padding: .25rem;
+            }
+            .princingInfo__group--content ul li{
+                line-height: 2.4rem;
+            }
+            .princingInfo__group--content a{
+                color:var(--coldBlack);
+            }
     </style>    
 </head>
 <body>
@@ -115,11 +146,26 @@
     <main role="main">
         <div id="pricingInfo">
             <div class="pricingInfo__try">
-                <h1 role="heading">Try Pulse free for 30 days._</h1>
+                <h1 role="heading">Try Pulse free for 30 days.</h1>
                 <p>See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.</p>
             </div>
-            <div class="pricingInfo_cards"></div>
-            <div id="review"></div>
+            <div class="princingInfo__group">
+                <div class="princingInfo__group--content">
+                    <h2>These are what we call the Pulse Basics. They’re what every customer gets.</h2>
+                    <ul  role="list">
+                        <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
+                        <li>Forecast growth with recurring income or expenses that scale automatically</li>
+                        <li>Works with any currency</li>
+                        <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
+                        <li>Toggle entries and accounts on and off to game out different scenarios</li>
+                    </ul>
+                    <p>Just need the Pulse Basics?
+                        <br>
+                        <a href="https://create.pulseapp.com/signup/">Get them now</a> for $29 per month.</p>
+                </div>
+                <div class="pricingInfo_cards"></div>
+                <div id="review"></div>
+            </div>
         </div>
     </main>
 </body>
