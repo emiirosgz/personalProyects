@@ -1,0 +1,23 @@
+{
+  "name": "personalproyects",
+  "version": "1.0.0",
+  "description": "para el curso de prework de platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiirosgz/personalProyects.git"
+  },
+  "keywords": [
+    "javascript",
+    "ecmascript"
+  ],
+  "author": "Emireth Rosas <emireth.rosas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emiirosgz/personalProyects/issues"
+  },
+  "homepage": "https://github.com/emiirosgz/personalProyects#readme"
+}
